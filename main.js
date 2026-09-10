@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
 
   // --- 1. Navigation Menu Toggle (Staggered Bars <-> X Close) ---
@@ -264,29 +263,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateThemeGradient();
 
-    // Accordion Toggle Event Listener (Unified Single-Open Behavior)
+    // Accordion Toggle Event Listener (Unified Single-Open Behavior for FAQs)
     const accordionItems = widgetContent.querySelectorAll('.accordion-item');
     accordionItems.forEach(item => {
       const header = item.querySelector('.accordion-header');
       const content = item.querySelector('.accordion-content');
       const chevron = item.querySelector('.icon-chevron');
 
-      header.addEventListener('click', () => {
-        const isOpen = !content.classList.contains('hidden');
+      if (header && content) {
+        header.addEventListener('click', () => {
+          const isOpen = !content.classList.contains('hidden');
 
-        // Close all accordion items inside this section
-        accordionItems.forEach(otherItem => {
-          otherItem.querySelector('.accordion-content').classList.add('hidden');
-          const otherChevron = otherItem.querySelector('.icon-chevron');
-          if (otherChevron) otherChevron.style.transform = 'rotate(0deg)';
+          // Close all accordion items inside this section
+          accordionItems.forEach(otherItem => {
+            const otherContent = otherItem.querySelector('.accordion-content');
+            const otherChevron = otherItem.querySelector('.icon-chevron');
+            if (otherContent) otherContent.classList.add('hidden');
+            if (otherChevron) otherChevron.style.transform = 'rotate(0deg)';
+          });
+
+          // Toggle current item
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+          }
         });
-
-        // Toggle current item
-        if (!isOpen) {
-          content.classList.remove('hidden');
-          if (chevron) chevron.style.transform = 'rotate(180deg)';
-        }
-      });
+      }
     });
   }
 
@@ -319,9 +321,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }, 100);
 
+  // Initialize remaining modules
+  generateCoreValues();
+  initAccordion();
   initEmailJS();
   initHeroCanvas();
+  initScrollAnimations();
 });
+
 
 // --- 5. Canvas Background Effect ---
 function initHeroCanvas() {
@@ -409,7 +416,9 @@ function initHeroCanvas() {
   animate();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+
+// --- 6. Scroll Animations ---
+function initScrollAnimations() {
   const observerOptions = {
     root: null,
     rootMargin: "0px 0px -50px 0px",
@@ -433,9 +442,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }, observerOptions);
 
   document.querySelectorAll(".scroll-anim").forEach((el) => observer.observe(el));
-});
+}
 
-// --- 6. EmailJS Handling ---
+
+// --- 7. EmailJS Handling ---
 function initEmailJS() {
   if (typeof emailjs !== 'undefined') {
     emailjs.init("7Haz78eFLoz2xY4bh");
@@ -519,158 +529,120 @@ function initEmailJS() {
 
 
 function refreshParallaxBg() {
-    var card = document.getElementById('parallax-card');
-    if (card) {
-      var randomSeed = Math.floor(Math.random() * 1000);
-      card.style.backgroundImage = 'url("https://picsum.photos/1200/800?random=' + randomSeed + '")';
-    }
+  var card = document.getElementById('parallax-card');
+  if (card) {
+    var randomSeed = Math.floor(Math.random() * 1000);
+    card.style.backgroundImage = 'url("https://picsum.photos/1200/800?random=' + randomSeed + '")';
   }
+}
 
 
-// Data source for Core Values
+// --- 8. Core Values Data & Generator ---
 const coreValuesData = [
-    {
-        icon: 'fa-solid fa-shield-halved',
-        title: 'Integrity & Professionalism',
-        text: 'Upholding the highest standards of technical competence, transparency, and honesty in all repairs and recommendations.'
-    },
-    {
-        icon: 'fa-solid fa-headset',
-        title: 'Client-Centric Service',
-        text: 'Focusing on understanding the client\'s specific needs to deliver personalised, cost-effective, and long-lasting IT solutions.'
-    },
-    {
-        icon: 'fa-solid fa-chart-line',
-        title: 'Continuous Learning',
-        text: 'Committing to daily professional development to stay ahead of evolving threats and technologies.'
-    },
-    {
-        icon: 'fa-solid fa-lock',
-        title: 'Security First',
-        text: 'Integrating fundamental cybersecurity practices into every service, from networking to system maintenance.'
-    },
-    {
-        icon: 'fa-solid fa-location-dot',
-        title: 'Local Reliability',
-        text: 'Providing consistent, trustworthy, and accessible IT support to the Polokwane community, ensuring swift resolution times.'
-    }
+  {
+    icon: 'fa-solid fa-shield-halved',
+    title: 'Integrity & Professionalism',
+    text: 'Upholding the highest standards of technical competence, transparency, and honesty in all repairs and recommendations.'
+  },
+  {
+    icon: 'fa-solid fa-headset',
+    title: 'Client-Centric Service',
+    text: 'Focusing on understanding the client\'s specific needs to deliver personalised, cost-effective, and long-lasting IT solutions.'
+  },
+  {
+    icon: 'fa-solid fa-chart-line',
+    title: 'Continuous Learning',
+    text: 'Committing to daily professional development to stay ahead of evolving threats and technologies.'
+  },
+  {
+    icon: 'fa-solid fa-lock',
+    title: 'Security First',
+    text: 'Integrating fundamental cybersecurity practices into every service, from networking to system maintenance.'
+  },
+  {
+    icon: 'fa-solid fa-location-dot',
+    title: 'Local Reliability',
+    text: 'Providing consistent, trustworthy, and accessible IT support to the Polokwane community, ensuring swift resolution times.'
+  }
 ];
 
-/**
- * Dynamically builds and inserts the Core Values markup into .corevalues
- */
 function generateCoreValues() {
-    const coreValuesTarget = document.querySelector('.corevalues');
-    if (!coreValuesTarget) return;
+  const coreValuesTarget = document.querySelector('.corevalues');
+  if (!coreValuesTarget) return;
 
-    coreValuesTarget.innerHTML = `
-        <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left" style="color: var(--clr-main-nav-bg);">
-            Core Values
-        </h3>
-        <div class="space-y-4" id="core-values-accordion">
-            ${coreValuesData.map((item, index) => `
-                <div class="accordion-item rounded-xl border shadow-sm transition-all duration-300 overflow-hidden" style="background-color: var(--bg-card); border-color: var(--border-color);">
-                    <button 
-                        type="button" 
-                        class="accordion-header w-full flex items-center justify-between p-5 text-left font-semibold text-lg transition-colors cursor-pointer" 
-                        style="color: var(--text-primary);"
-                        aria-expanded="false"
-                        aria-controls="core-val-panel-${index}"
-                    >
-                        <span class="flex items-center gap-3">
-                            <i class="${item.icon} text-lg" style="color: var(--clr-solid-line);"></i>
-                            ${item.title}
-                        </span>
-                        <i class="accordion-icon fa-solid fa-chevron-down text-sm transition-transform duration-300" style="color: var(--text-secondary);"></i>
-                    </button>
-                    <div id="core-val-panel-${index}" class="accordion-panel grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
-                        <div class="overflow-hidden">
-                            <div class="px-5 py-4 border-t text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary); border-color: var(--border-color);">
-                                ${item.text}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `).join('')}
+  coreValuesTarget.innerHTML = `
+    <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left mb-4" style="color: var(--clr-main-nav-bg);">
+      Core Values
+    </h3>
+    <div class="space-y-4" id="core-values-accordion">
+      ${coreValuesData.map((item, index) => `
+        <div class="accordion-item rounded-xl border shadow-sm transition-all duration-300 overflow-hidden" style="background-color: var(--bg-card); border-color: var(--border-color);">
+          <button 
+            type="button" 
+            class="accordion-header w-full flex items-center justify-between p-5 text-left font-semibold text-lg transition-colors cursor-pointer" 
+            style="color: var(--text-primary);"
+            aria-expanded="false"
+            aria-controls="core-val-panel-${index}"
+          >
+            <span class="flex items-center gap-3">
+              <i class="${item.icon} text-lg" style="color: var(--clr-solid-line);"></i>
+              ${item.title}
+            </span>
+            <i class="accordion-icon fa-solid fa-chevron-down text-sm transition-transform duration-300" style="color: var(--text-secondary);"></i>
+          </button>
+          <div id="core-val-panel-${index}" class="accordion-panel grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+            <div class="overflow-hidden">
+              <div class="px-5 py-4 border-t text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary); border-color: var(--border-color);">
+                ${item.text}
+              </div>
+            </div>
+          </div>
         </div>
-    `;
+      `).join('')}
+    </div>
+  `;
 }
 
-/**
- * Handles smooth grid-rows expansion and collapse logic
- */
+
+// --- 9. Accordion Handler (Grid Rows Transition) ---
 function initAccordion() {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-    accordionHeaders.forEach(header => {
-        // Prevent duplicate event bindings
-        if (header.hasAttribute('data-accordion-bound')) return;
-        header.setAttribute('data-accordion-bound', 'true');
+  accordionHeaders.forEach(header => {
+    // Prevent duplicate event bindings
+    if (header.hasAttribute('data-accordion-bound')) return;
+    header.setAttribute('data-accordion-bound', 'true');
 
-        header.addEventListener('click', () => {
-            const currentItem = header.closest('.accordion-item');
-            const parentList = currentItem?.parentElement;
-            const panel = header.nextElementSibling;
-            const chevron = header.querySelector('.accordion-icon, .chevron-icon');
+    header.addEventListener('click', () => {
+      const panel = header.nextElementSibling;
+      const icon = header.querySelector('.accordion-icon');
 
-            if (!panel) return;
+      if (!panel) return;
 
-            const isCurrentlyOpen = header.classList.contains('active');
+      const isOpen = header.getAttribute('aria-expanded') === 'true';
 
-            // Close all sibling accordion panels within the same parent
-            if (parentList) {
-                parentList.querySelectorAll('.accordion-header').forEach(otherHeader => {
-                    otherHeader.classList.remove('active');
-                    otherHeader.setAttribute('aria-expanded', 'false');
-
-                    const otherChevron = otherHeader.querySelector('.accordion-icon, .chevron-icon');
-                    if (otherChevron) otherChevron.classList.remove('rotate-180');
-
-                    const otherPanel = otherHeader.nextElementSibling;
-                    if (otherPanel) {
-                        otherPanel.classList.remove('grid-rows-[1fr]');
-                        otherPanel.classList.add('grid-rows-[0fr]');
-                    }
-                });
-            }
-
-            // Expand clicked panel if it wasn't open
-            if (!isCurrentlyOpen) {
-                header.classList.add('active');
-                header.setAttribute('aria-expanded', 'true');
-                if (chevron) chevron.classList.add('rotate-180');
-
-                panel.classList.remove('grid-rows-[0fr]');
-                panel.classList.add('grid-rows-[1fr]');
-            }
+      // Close all accordion panels in the same section container
+      const container = header.closest('#core-values-accordion') || header.parentElement.parentElement;
+      if (container) {
+        container.querySelectorAll('.accordion-header').forEach(h => {
+          h.setAttribute('aria-expanded', 'false');
+          const p = h.nextElementSibling;
+          const ic = h.querySelector('.accordion-icon');
+          if (p && p.classList.contains('accordion-panel')) {
+            p.classList.remove('grid-rows-[1fr]');
+            p.classList.add('grid-rows-[0fr]');
+          }
+          if (ic) ic.classList.remove('rotate-180');
         });
+      }
+
+      // If clicked header was closed, open it
+      if (!isOpen) {
+        header.setAttribute('aria-expanded', 'true');
+        panel.classList.remove('grid-rows-[0fr]');
+        panel.classList.add('grid-rows-[1fr]');
+        if (icon) icon.classList.add('rotate-180');
+      }
     });
+  });
 }
-
-/**
- * Initialize on DOM Load
- */
-document.addEventListener('DOMContentLoaded', () => {
-    generateCoreValues();
-    initAccordion();
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
