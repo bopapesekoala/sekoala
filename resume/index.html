@@ -378,47 +378,335 @@
   
 
     <main>
-        <section class="resume-section">
-            <h1>Resume</h1>
+
+<section class="relative py-20 bg-fixed bg-cover bg-center transition-colors duration-300" id="about-section" style="background-color: var(--clr-white); color: var(--clr-primary-text);">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight solid-line-class-bottom scroll-anim" data-anim="fade-down">
+        About Me
+      </h2>
+    </div>
+        
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      
+      <div class="mission-vision space-y-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left scroll-anim" style="color: var(--clr-main-nav-bg);" data-anim="fade-up" data-delay="100">
+          Our Mission &amp; Vision
+        </h3>
             
-            <article>
-                <h2>Professional Summary</h2>
-                <p>Experienced IT Professional specializing in Network Engineering, Systems Administration, and Technical Support with hands-on expertise in router configuration, network security, and infrastructure troubleshooting.</p>
-            </article>
+        <div class="mv-content grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 p-6 lg:p-8 rounded-2xl shadow-lg border transition-colors duration-300" style="background-color: var(--bg-card); border-color: var(--border-color);">
+          
+          <div class="mission-box space-y-3 scroll-anim" data-anim="fade-right" data-delay="200">
+            <h4 class="text-xl font-bold flex items-center gap-2 scroll-anim" style="color: var(--clr-solid-line);" data-anim="middle-out" data-delay="300">
+              <i class="fa-solid fa-bullseye"></i> Mission
+            </h4>
+            <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary);">
+              To deliver reliable, high-integrity, and client-centric IT solutions to the Polokwane community, ensuring swift and sustainable resolution of technical issues.
+            </p>
+          </div>
+          
+          <div class="solid-line-class-vertical hidden md:block w-px h-full min-h-[140px] self-center justify-self-center solid-line-divider scroll-anim" data-anim="middle-in" data-delay="350"></div>
+          
+          <div class="vision-box space-y-3 scroll-anim" data-anim="fade-left" data-delay="400">
+            <h4 class="text-xl font-bold flex items-center gap-2 scroll-anim" style="color: var(--clr-solid-line);" data-anim="middle-out" data-delay="500">
+              <i class="fa-solid fa-eye"></i> Vision
+            </h4>
+            <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary);">
+              To be the most trusted and sought-after IT support professional in Limpopo, known for expertise in networking, security, and hardware maintenance.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="corevalues space-y-8 scroll-anim" data-anim="middle-out" data-delay="200">
+        </div>
 
-            <article>
-                <h2>Core Competencies</h2>
-                <ul>
-                    <li><strong>Networking:</strong> Routing & Switching, VLANs, OSPF, Subnetting, TCP/IP, VPN Deployment</li>
-                    <li><strong>Systems:</strong> Windows Server, Linux (Ubuntu/Debian), Active Directory</li>
-                    <li><strong>Security:</strong> Firewall Rules, Intrusion Detection, ACLs, Security Hardening</li>
-                    <li><strong>Hardware:</strong> PC Assembly, Component Diagnostics, Hardware Maintenance</li>
-                </ul>
-            </article>
+    </div>
+  </div>
+</section>
 
-            <article>
-                <h2>Work Experience</h2>
-                <h3>IT & Network Support Specialist</h3>
-                <p><em>Technical Operations</em></p>
-                <ul>
-                    <li>Configured and maintained local area networks, routers, and switches.</li>
-                    <li>Diagnosed hardware failures and resolved network performance bottlenecks.</li>
-                    <li>Implemented security protocols and access controls to safeguard data integrity.</li>
-                </ul>
-            </article>
+<section class="relative py-20 transition-colors duration-300 overflow-hidden" id="certifications-section" style="background-color: var(--bg-body, #ffffff);">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    
+    <header class="text-center mb-16 max-w-3xl mx-auto scroll-anim" data-anim="fade-down">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 inline-block relative pb-4" style="color: var(--text-primary, #0f172a);">
+        Professional Certifications &amp; Coursework
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full" style="background-color: var(--clr-solid-line, #3b82f6);"></span>
+      </h2>
+      <p class="text-base sm:text-lg leading-relaxed mt-2" style="color: var(--text-secondary, #475569);">
+        Detailed breakdown of completed modules across Cisco and CompTIA credentials.
+      </p>
+    </header>
 
-            <article>
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Cisco Certified Network Associate (CCNA)</li>
-                    <li>CompTIA Network+</li>
-                    <li>CompTIA Security+</li>
-                    <li>CompTIA A+</li>
-                    <li>CompTIA Server+</li>
-                </ul>
-            </article>
-        </section>
-    </main>
+    <div class="accordion-container space-y-4" id="cert-accordion-container" aria-live="polite"></div>
+
+  </div>
+</section>
+  
+<section class="relative py-20 bg-fixed bg-cover bg-center transition-colors duration-300 overflow-hidden" id="services-section" style="background-color: var(--bg-body, #f8fafc);">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 inline-block relative pb-4 scroll-anim" style="color: var(--text-primary, #0f172a);" data-anim="fade-down">
+        Professional Services
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full" style="background-color: var(--clr-solid-line, #3b82f6);"></span>
+      </h2>
+      <p class="text-base sm:text-lg leading-relaxed mt-4 scroll-anim" style="color: var(--text-secondary, #475569);" data-anim="fade-up" data-delay="100">
+        Leveraging certified expertise to offer a comprehensive range of IT technical services for home and business users.
+      </p>
+    </div>
+
+    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      
+      <div class="service-card offset-card lg:translate-y-6 flex flex-col p-8 rounded-2xl border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="fade-right" data-delay="150">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style="background-color: var(--bg-body, #eff6ff);">
+          <i class="fas fa-network-wired text-2xl transition-colors duration-300 scroll-anim" style="color: var(--clr-solid-line, #3b82f6);" data-anim="middle-out" data-delay="250"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary, #0f172a);">
+          Network Implementation &amp; Support
+        </h3>
+        <p class="text-sm sm:text-base leading-relaxed flex-grow" style="color: var(--text-secondary, #64748b);">
+          Design, configuration, and troubleshooting of Local Area Networks (LAN) and Wide Area Networks (WAN). Expertise in routing protocols (OSPF, EIGRP), switching, VLANs, and InterVLAN routing (CCNA/Net+ knowledge).
+        </p>
+      </div>
+
+      <div class="service-card flex flex-col p-8 rounded-2xl border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="fade-left" data-delay="250">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style="background-color: var(--bg-body, #eff6ff);">
+          <i class="fas fa-laptop-code text-2xl transition-colors duration-300 scroll-anim" style="color: var(--clr-solid-line, #3b82f6);" data-anim="middle-out" data-delay="350"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary, #0f172a);">
+          IT Hardware &amp; Software Support
+        </h3>
+        <p class="text-sm sm:text-base leading-relaxed flex-grow" style="color: var(--text-secondary, #64748b);">
+          Complete system maintenance, including installing, upgrading, configuring, and troubleshooting PC hardware, operating systems (Windows), mobile devices, and peripherals (A+ expertise).
+        </p>
+      </div>
+
+      <div class="service-card offset-card lg:translate-y-6 flex flex-col p-8 rounded-2xl border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="middle-out" data-delay="350">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style="background-color: var(--bg-body, #eff6ff);">
+          <i class="fas fa-user-shield text-2xl transition-colors duration-300 scroll-anim" style="color: var(--clr-solid-line, #3b82f6);" data-anim="middle-in" data-delay="450"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary, #0f172a);">
+          Cybersecurity &amp; System Hardening
+        </h3>
+        <p class="text-sm sm:text-base leading-relaxed flex-grow" style="color: var(--text-secondary, #64748b);">
+          Implementing security controls, managing access lists, vulnerability scanning, configuring secure wireless setups, and advising on threat mitigation and device hardening (Security+ expertise).
+        </p>
+      </div>
+
+      <div class="service-card flex flex-col p-8 rounded-2xl border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="middle-in" data-delay="450">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style="background-color: var(--bg-body, #eff6ff);">
+          <i class="fas fa-server text-2xl transition-colors duration-300 scroll-anim" style="color: var(--clr-solid-line, #3b82f6);" data-anim="middle-out" data-delay="550"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary, #0f172a);">
+          Server Administration &amp; Recovery
+        </h3>
+        <p class="text-sm sm:text-base leading-relaxed flex-grow" style="color: var(--text-secondary, #64748b);">
+          Basic server setup, storage management, security implementation, and developing disaster recovery and business continuity plans (Server+ knowledge).
+        </p>
+      </div>
+
+      <div class="service-card offset-card lg:translate-y-6 flex flex-col p-8 rounded-2xl border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group md:col-span-2 lg:col-span-1 scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="fade-up" data-delay="550">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style="background-color: var(--bg-body, #eff6ff);">
+          <i class="fas fa-comments text-2xl transition-colors duration-300 scroll-anim" style="color: var(--clr-solid-line, #3b82f6);" data-anim="middle-out" data-delay="650"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3" style="color: var(--text-primary, #0f172a);">
+          Technical Consulting &amp; Audits
+        </h3>
+        <p class="text-sm sm:text-base leading-relaxed flex-grow" style="color: var(--text-secondary, #64748b);">
+          Providing expert advice on technology purchasing, system optimization, network best practices, and security audits for small to medium-sized businesses and home offices (SOHO).
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+<section class="relative py-20 bg-fixed bg-cover bg-center transition-colors duration-300 overflow-hidden" id="testimonials-section" style="background-color: var(--bg-body, #ffffff);">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    
+    <div class="text-center mb-12 max-w-3xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 inline-block relative pb-4 scroll-anim" style="color: var(--text-primary, #0f172a);" data-anim="fade-down">
+        Client Testimonials
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full" style="background-color: var(--clr-solid-line, #3b82f6);"></span>
+      </h2>
+      <p class="text-base sm:text-lg leading-relaxed mt-4 scroll-anim" style="color: var(--text-secondary, #475569);" data-anim="fade-right" data-delay="150">
+        Hear from my satisfied clients about the quality and reliability of my IT support services.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 rounded-2xl border shadow-sm transition-all duration-300 scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="middle-out" data-delay="300">
+      <div class="blootrue-widget-4NP-tjo1tWiA">
+        <noscript>
+          <a href="https://www.blootrue.com/widgets/google?utm_source=widget&amp;utm_medium=embed&amp;utm_campaign=powered_by" rel="noopener" target="_blank" class="text-sm underline" style="color: var(--clr-solid-line, #3b82f6);">
+            Free Google reviews widget by BlooTrue
+          </a>
+        </noscript>
+      </div>
+      <script async="async" src="https://api.blootrue.com/api/widgets/platform.js" type="text/javascript"></script>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="relative py-20 transition-colors duration-300 overflow-hidden" id="contact-section" style="background-color: var(--bg-body, #ffffff);">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+    
+    <!-- Contact Grid Container -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+      
+      <!-- Contact Info Left Column -->
+      <div class="lg:col-span-5 space-y-6 scroll-anim" data-anim="fade-right">
+        
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6 inline-block relative pb-4 scroll-anim" style="color: var(--text-primary, #0f172a);" data-anim="fade-down" data-delay="100">
+          Get In Touch
+          <span class="absolute bottom-0 left-0 w-20 h-1 rounded-full" style="background-color: var(--clr-solid-line, #3b82f6);"></span>
+        </h2>
+        
+        <!-- Header Brand Group -->
+        <div class="flex items-center gap-4 py-2 scroll-anim" data-anim="middle-out" data-delay="200">
+          <img alt="Sekoala Daniel Bopape Logo" class="w-12 h-12 object-cover rounded-full border shadow-sm" id="header-logo-img" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936763/Black_White_Minimalist_Signature_Personal_Brand_Logo_20251001_145831_0001_jn93le.png" style="border-color: var(--border-color, #e2e8f0);"/>
+          <div class="site-logo font-bold text-xl tracking-wider">
+            <a class="transition-colors hover:opacity-80" href="#top" style="color: var(--text-primary, #0f172a);">
+              <span class="font-black" style="color: var(--clr-solid-line, #3b82f6);">SEKOALA</span> <span>BOPAPE</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="space-y-4 text-sm sm:text-base">
+          
+          <div class="flex items-start gap-3.5 transition-colors scroll-anim" data-anim="fade-right" data-delay="250">
+            <i class="fas fa-map-marker-alt text-lg mt-1 shrink-0" style="color: var(--clr-solid-line, #3b82f6);"></i>
+            <address class="not-italic leading-relaxed" style="color: var(--text-secondary, #475569);">
+              1354/5 Ramathope, Ga-Mothiba, Nobody, Polokwane, 0726
+            </address>
+          </div>
+          
+          <div class="flex items-center gap-3.5 scroll-anim" data-anim="fade-right" data-delay="300">
+            <i class="fab fa-whatsapp text-lg shrink-0" style="color: var(--clr-solid-line, #25d366);"></i>
+            <a class="font-medium transition-colors hover:underline" href="https://wa.me/27711405870" rel="noopener noreferrer" style="color: var(--text-primary, #0f172a);" target="_blank">
+              WhatsApp: 071 140-5870
+            </a>
+          </div>
+          
+          <div class="flex items-center gap-3.5 scroll-anim" data-anim="fade-right" data-delay="350">
+            <i class="fas fa-phone text-lg shrink-0" style="color: var(--clr-solid-line, #3b82f6);"></i>
+            <a class="font-medium transition-colors hover:underline" href="tel:+27711405870" style="color: var(--text-primary, #0f172a);">
+              Calls: 071 140-5870
+            </a>
+          </div>
+          
+          <div class="flex items-center gap-3.5 scroll-anim" data-anim="fade-right" data-delay="400">
+            <i class="fas fa-envelope text-lg shrink-0" style="color: var(--clr-solid-line, #3b82f6);"></i>
+            <a class="font-medium transition-colors hover:underline" href="mailto:sekoalabopape@gmail.com" style="color: var(--text-primary, #0f172a);">
+              sekoalabopape@gmail.com
+            </a>
+          </div>
+          
+        </div>
+        
+        <!-- Social Icons Section -->
+        <div class="pt-2">
+          <h4 class="text-sm font-semibold uppercase tracking-wider mb-3 scroll-anim" style="color: var(--text-secondary, #64748b);" data-anim="fade-up" data-delay="450">
+            Connect with me:
+          </h4>
+          
+          <div class="flex flex-wrap gap-3 scroll-anim" data-anim="middle-in" data-delay="500">
+            <a aria-label="instagram" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/instagram.html" rel="noopener noreferrer" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a aria-label="twitter" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/twitter.html" rel="noopener noreferrer" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a aria-label="TikTok" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/tiktok.html" rel="noopener noreferrer" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);" target="_blank">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a aria-label="YouTube" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/youtube-channel.html" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a aria-label="LinkedIn" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/linkedin.html" rel="noopener noreferrer" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a aria-label="Facebook" class="w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 hover:-translate-y-1 shadow-sm" href="https://www.sekoala.co.za/p/facebook-page.html" rel="noopener noreferrer" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0); color: var(--text-primary, #0f172a);" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Embed Google Map -->
+        <div class="rounded-2xl overflow-hidden border shadow-sm mt-6 scroll-anim" style="border-color: var(--border-color, #e2e8f0);" data-anim="fade-up" data-delay="550">
+          <iframe allowfullscreen="" class="w-full h-48 border-0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.679414982628!2d29.671604099999996!3d-23.865515100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6a3738b4cd0c1e8f%3A0xf8ac26af66df5c95!2siT-U!5e0!3m2!1sen!2sza!4v1786455380834!5m2!1sen!2sza"></iframe>
+        </div>
+        
+      </div>
+
+      <!-- Vertical Divider (Desktop Only) -->
+      <div class="hidden lg:block lg:col-span-1 justify-self-center h-full w-px scroll-anim" style="background-color: var(--border-color, #e2e8f0);" data-anim="middle-out" data-delay="300"></div>
+
+      <!-- Contact Form Right Column -->
+      <div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl border shadow-sm transition-all duration-300 scroll-anim" style="background-color: var(--bg-card, #ffffff); border-color: var(--border-color, #e2e8f0);" data-anim="fade-left">
+        
+        <form id="contact-form" class="space-y-4">
+          <h3 class="text-2xl font-bold mb-6 scroll-anim" style="color: var(--text-primary, #0f172a);" data-anim="fade-down" data-delay="150">
+            Send Me a Message
+          </h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="200">
+              <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="name">Name:</label>
+              <input class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2" id="name" name="name" placeholder="Your First Name" required="required" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);" type="text"/>
+            </div>
+            
+            <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="250">
+              <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="surname">Surname:</label>
+              <input class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2" id="surname" name="surname" placeholder="Your Last Name" required="required" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);" type="text"/>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="300">
+              <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="email">Email:</label>
+              <input class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2" id="email" name="email" placeholder="your.email@example.com" required="required" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);" type="email"/>
+            </div>
+            
+            <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="350">
+              <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="phone">Phone Number:</label>
+              <input class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2" id="phone" name="phone" placeholder="e.g. 071 123 4567" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);" type="tel"/>
+            </div>
+          </div>
+          
+          <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="400">
+            <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="subject">Subject:</label>
+            <input class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2" id="subject" name="subject" placeholder="What is this regarding?" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);" type="text"/>
+          </div>
+          
+          <div class="space-y-1.5 scroll-anim" data-anim="fade-left" data-delay="450">
+            <label class="block text-sm font-medium" style="color: var(--text-primary, #0f172a);" for="message">Message me:</label>
+            <textarea class="w-full px-4 py-2.5 rounded-lg border text-sm transition-colors focus:outline-none focus:ring-2 resize-y" id="message" name="message" placeholder="How can I assist you with your IT needs?" required="required" rows="5" style="background-color: var(--bg-body, #ffffff); border-color: var(--border-color, #cbd5e1); color: var(--text-primary, #0f172a);"></textarea>
+          </div>
+          
+          <!-- Hidden Inputs for EmailJS -->
+          <input name="service_id" type="hidden" value="service_j0q0up8"/>
+          <input name="template_id" type="hidden" value="template_4rqga9k"/> 
+          <input name="user_id" type="hidden" value="7Haz78eFLoz2xY4bh"/>
+          
+          <button class="w-full sm:w-auto px-6 py-3 rounded-lg text-white font-medium text-sm inline-flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer scroll-anim" id="submit-btn" style="background-color: var(--clr-solid-line, #3b82f6);" type="submit" data-anim="fade-up" data-delay="500">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          
+          <div class="mt-4 p-3 rounded-lg text-sm hidden" id="form-message"></div>
+        </form>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
 
 
     <!-- SECTION: Footer with Copilot & Code Branding -->
