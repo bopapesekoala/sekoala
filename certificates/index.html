@@ -376,56 +376,156 @@
 </header>
   
 
-<main>
-    <h1>Professional Certifications</h1>
-    <p>A directory of earned certifications demonstrating technical proficiency across networking, security, and systems.</p>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <!-- Section Header -->
+  <div class="text-center max-w-3xl mx-auto mb-12 scroll-anim" data-anim="fade-down" data-delay="100">
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-4">
+      Professional Certifications
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300">
+      A directory of earned certifications demonstrating technical proficiency across networking, security, and systems.
+    </p>
+  </div>
 
-    <div class="certificate-grid">
-        <!-- CCNA (Combines ICND1 & ICND2) -->
-        <article class="card">
-            <h2>CCNA</h2>
-            <p class="exam-code">100-105 ICND1 &amp; 200-105 ICND2</p>
-            <p>Cisco Certified Network Associate - Routing, Switching, and Network Fundamentals.</p>
-            <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Earned: 13th February 2020</span>
-            <a href="ccna.html">View Details</a>
-        </article>
+  <!-- Certification Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+    
+    <!-- CCNA (Combines ICND1 & ICND2) -->
+    <article class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col justify-between scroll-anim" data-anim="fade-up" data-delay="150">
+      <div>
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">CCNA</h2>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 border border-cyan-300/30">
+            Cisco
+          </span>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 font-mono mb-3 uppercase tracking-wider">
+          100-105 ICND1 &amp; 200-105 ICND2
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+          Cisco Certified Network Associate - Routing, Switching, and Network Fundamentals.
+        </p>
+      </div>
 
-        <!-- CompTIA A+ (Combines Core 1 & Core 2) -->
-        <article class="card">
-            <h2>CompTIA A+</h2>
-            <p class="exam-code">Core 1 (220-1001) &amp; Core 2 (220-1002)</p>
-            <p>Hardware diagnostics, operating system maintenance, and technical support.</p>
-            <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Earned: 14th February 2020</span>
-            <a href="a+.html">View Details</a>
-        </article>
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+          <i class="fa-regular fa-calendar-days mr-1.5 text-cyan-500"></i> Earned: 13th Feb 2020
+        </span>
+        <a href="ccna.html" class="inline-flex items-center text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 px-3 py-1.5 rounded-md transition-colors w-full sm:w-auto justify-center">
+          View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+        </a>
+      </div>
+    </article>
 
-        <!-- CompTIA Network+ -->
-        <article class="card">
-            <h2>CompTIA Network+</h2>
-            <p class="exam-code">N10-007 (2017)</p>
-            <p>Network architecture, troubleshooting, operations, and security protocols.</p>
-            <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Earned: 13th February 2020</span>
-            <a href="network+.html">View Details</a>
-        </article>
+    <!-- CompTIA A+ (Combines Core 1 & Core 2) -->
+    <article class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col justify-between scroll-anim" data-anim="fade-up" data-delay="200">
+      <div>
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">CompTIA A+</h2>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 border border-cyan-300/30">
+            CompTIA
+          </span>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 font-mono mb-3 uppercase tracking-wider">
+          Core 1 (220-1001) &amp; Core 2 (220-1002)
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+          Hardware diagnostics, operating system maintenance, and technical support.
+        </p>
+      </div>
 
-        <!-- CompTIA Security+ -->
-        <article class="card">
-            <h2>CompTIA Security+</h2>
-            <p class="exam-code">SY0-501</p>
-            <p>Threat management, cryptography, identity management, and risk mitigation.</p>
-            <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Earned: 15th February 2020</span>
-            <a href="security+.html">View Details</a>
-        </article>
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+          <i class="fa-regular fa-calendar-days mr-1.5 text-cyan-500"></i> Earned: 14th Feb 2020
+        </span>
+        <a href="a+.html" class="inline-flex items-center text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 px-3 py-1.5 rounded-md transition-colors w-full sm:w-auto justify-center">
+          View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+        </a>
+      </div>
+    </article>
 
-        <!-- CompTIA Server+ -->
-        <article class="card">
-            <h2>CompTIA Server+</h2>
-            <p class="exam-code">SK0-004</p>
-            <p>Server architecture, storage technologies, virtualization, and disaster recovery.</p>
-            <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Earned: 15th February 2020</span>
-            <a href="server+.html">View Details</a>
-        </article>
-    </div>
+    <!-- CompTIA Network+ -->
+    <article class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col justify-between scroll-anim" data-anim="fade-up" data-delay="250">
+      <div>
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">CompTIA Network+</h2>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 border border-cyan-300/30">
+            CompTIA
+          </span>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 font-mono mb-3 uppercase tracking-wider">
+          N10-007 (2017)
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+          Network architecture, troubleshooting, operations, and security protocols.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+          <i class="fa-regular fa-calendar-days mr-1.5 text-cyan-500"></i> Earned: 13th Feb 2020
+        </span>
+        <a href="network+.html" class="inline-flex items-center text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 px-3 py-1.5 rounded-md transition-colors w-full sm:w-auto justify-center">
+          View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- CompTIA Security+ -->
+    <article class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col justify-between scroll-anim" data-anim="fade-up" data-delay="300">
+      <div>
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">CompTIA Security+</h2>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 border border-cyan-300/30">
+            CompTIA
+          </span>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 font-mono mb-3 uppercase tracking-wider">
+          SY0-501
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+          Threat management, cryptography, identity management, and risk mitigation.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+          <i class="fa-regular fa-calendar-days mr-1.5 text-cyan-500"></i> Earned: 15th Feb 2020
+        </span>
+        <a href="security+.html" class="inline-flex items-center text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 px-3 py-1.5 rounded-md transition-colors w-full sm:w-auto justify-center">
+          View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- CompTIA Server+ -->
+    <article class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col justify-between scroll-anim" data-anim="fade-up" data-delay="350">
+      <div>
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">CompTIA Server+</h2>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 border border-cyan-300/30">
+            CompTIA
+          </span>
+        </div>
+        <p class="text-xs font-semibold text-cyan-600 dark:text-cyan-400 font-mono mb-3 uppercase tracking-wider">
+          SK0-004
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+          Server architecture, storage technologies, virtualization, and disaster recovery.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <span class="text-xs text-gray-500 dark:text-gray-400 flex items-center">
+          <i class="fa-regular fa-calendar-days mr-1.5 text-cyan-500"></i> Earned: 15th Feb 2020
+        </span>
+        <a href="server+.html" class="inline-flex items-center text-xs font-semibold text-white bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 px-3 py-1.5 rounded-md transition-colors w-full sm:w-auto justify-center">
+          View Details <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
+        </a>
+      </div>
+    </article>
+
+  </div>
 </main>
     <!-- SECTION: Footer with Copilot & Code Branding -->
 <footer class="site-footer max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-cyan-500/30 dark:border-gray-800 text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300 scroll-anim" data-anim="fade-down" id="site-footer-section">
