@@ -390,12 +390,602 @@
             <h2>About My Work</h2>
             <p>Specializing in network configurations, hardware maintenance, cybersecurity lab environments, and modern web development.</p>
         </section>
+
+  
+<!-- SECTION: Hero Banner -->
+<section class="hero-banner relative w-full overflow-hidden" id="top">
+  <div class="relative w-full min-h-[85vh] bg-fixed bg-cover bg-center bg-no-repeat transition-all duration-700 flex items-center justify-center p-4 md:p-10" id="parallax-hero-bg" style="background-image: linear-gradient(to right, rgba(236, 254, 255, 0.92), rgba(207, 250, 254, 0.85)), url('https://picsum.photos/1920/1080?technology');">
+    
+    <canvas class="absolute inset-0 w-full h-full pointer-events-none opacity-40 z-0" id="hero-canvas"></canvas>
+    
+    <div class="hero-container-row scroll-anim relative z-10 w-full max-w-6xl mx-auto backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border border-cyan-500/30 dark:border-slate-700/60 rounded-2xl p-6 md:p-10 shadow-2xl transition-all duration-300 hover:border-cyan-500" data-anim="middle-out">
+      
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
+        
+        <div class="hero-content-left scroll-anim flex-1 text-left space-y-4" data-anim="fade-right" data-delay="100">
+          
+          <h1 class="scroll-anim text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight" data-anim="fade-down" data-delay="200">
+            Sekoala Daniel Bopape
+          </h1>
+          
+          <p class="subtitle scroll-anim text-base md:text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed" data-anim="fade-up" data-delay="300">
+            Certified IT Support Specialist & Network Engineer <span class="text-cyan-500 font-bold">|</span> Security & Surveillance Operations
+          </p>
+          
+          <div class="availability-badge scroll-anim inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-inner" data-anim="middle-in" data-delay="400">
+            <i class="fa-solid fa-circle-check text-emerald-500 dark:text-emerald-400"></i> Actively Seeking IT & Technical Opportunities
+          </div>
+          
+          <div class="contact-pills scroll-anim flex flex-wrap gap-2.5 pt-2" data-anim="fade-right" data-delay="500">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium bg-white/90 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-cyan-500/30 dark:border-slate-700/60 shadow-sm transition-colors">
+              <i class="fa-solid fa-location-dot text-cyan-500"></i> Polokwane / Ga-Mothiba, Limpopo
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium bg-white/90 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-cyan-500/30 dark:border-slate-700/60 shadow-sm transition-colors">
+              <i class="fa-solid fa-phone text-cyan-500"></i> 071 140-5870
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium bg-white/90 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-cyan-500/30 dark:border-slate-700/60 shadow-sm transition-colors">
+              <i class="fa-solid fa-language text-cyan-500"></i> English & Sepedi
+            </span>
+          </div>
+
+          <div class="cta-buttons flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4 scroll-anim" data-anim="middle-in" data-delay="600">
+            <a class="cta-btn primary-btn inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold shadow-lg transition-all duration-300 transform hover:-translate-y-0.5" href="https://drive.google.com/drive/folders/1v7imTkqH-aocHah8-mOYI3E2C10Btp9Y" rel="noopener noreferrer" style="background-color: var(--btn-primary-bg, #e68d2c); color: var(--btn-primary-text, #ffffff);" target="_blank">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a class="cta-btn secondary-btn inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 font-semibold transition-all duration-300 transform hover:-translate-y-0.5" href="https://drive.google.com/drive/folders/1QovjxzKHnYjwtLP9KgTOak8eiG85k4S1" rel="noopener noreferrer" style="border-color: var(--btn-secondary-border, #0891b2); color: var(--btn-secondary-text, #0891b2);" target="_blank">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+
+        </div>
+
+        <div class="scroll-anim hidden lg:block w-px h-64 bg-gradient-to-b from-transparent via-cyan-500/50 to-transparent" data-anim="fade-down" data-delay="250"></div>
+
+        <div class="hero-right scroll-anim flex-1 flex justify-center items-center w-full" data-anim="fade-left" data-delay="300">
+          <div class="blob-container relative group">
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-teal-400 to-blue-600 blur opacity-40 group-hover:opacity-80 transition duration-500"></div>
+            
+            <div class="organic-blob scroll-anim relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-cyan-500/50 shadow-2xl bg-white dark:bg-slate-800" data-anim="middle-out" data-delay="450">
+              <img alt="Sekoala Bopape Portrait" class="hero-img hero-img-blob w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1788486144/Firefly_Gemini_Flash_Change_clothes_to_professional_office_suite_gray_lines_stripes_35137_p9l523.jpg"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Professional Cover Letter -->
+<section class="profile-section relative w-full overflow-hidden my-12" id="cover-letter">
+  <div class="relative w-full bg-fixed bg-cover bg-center bg-no-repeat transition-all duration-700 flex items-center justify-center p-4 md:p-12 scroll-anim" data-anim="fade-down" id="parallax-cover-letter-bg" style="background-image: linear-gradient(to right, rgba(236, 254, 255, 0.94), rgba(207, 250, 254, 0.88)), url('https://picsum.photos/1920/1080?technology');">
+
+    <!-- Cover Letter Card Container -->
+    <div class="cover-letter-card relative z-10 w-full max-w-4xl mx-auto backdrop-blur-md bg-white/85 dark:bg-slate-900/80 border border-cyan-500/30 dark:border-slate-700/60 rounded-2xl p-6 md:p-10 shadow-2xl transition-all duration-300 hover:border-cyan-500 space-y-6 text-slate-700 dark:text-slate-300 scroll-anim" data-anim="middle-out" data-delay="100">
+      
+      <!-- Header Title -->
+      <div class="border-b border-cyan-500/20 dark:border-slate-700/60 pb-4 flex items-center gap-3 scroll-anim" data-anim="fade-right" data-delay="200">
+        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/40 flex items-center justify-center text-cyan-600 dark:text-cyan-400 text-xl shadow-sm scroll-anim" data-anim="middle-in" data-delay="250">
+          <i class="fa-solid fa-file-lines"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          Professional Cover Letter
+        </h2>
+      </div>
+
+      <!-- Letter Body -->
+      <div class="space-y-4 text-sm md:text-base leading-relaxed font-normal">
+        <p class="text-slate-900 dark:text-white font-semibold text-base md:text-lg scroll-anim" data-anim="fade-down" data-delay="150">
+          To the Hiring Manager / Recruitment Team,
+        </p>
+
+        <p class="scroll-anim" data-anim="fade-up" data-delay="200">
+          I am writing to formally express my enthusiasm for technical career opportunities within your organization. With a robust professional foundation spanning physical security, surveillance monitoring, and certified IT infrastructure administration, I offer a disciplined and reliable background tailored to demanding technical operational roles.
+        </p>
+
+        <p class="scroll-anim" data-anim="fade-left" data-delay="250">
+          Having completed comprehensive technical training through IT Academy, I hold multiple internationally recognized certifications, including <strong class="text-cyan-600 dark:text-cyan-400 font-semibold">CompTIA A+, Network+, Security+, Server+, and Cisco CCNA</strong>.
+        </p>
+
+        <p class="scroll-anim" data-anim="fade-right" data-delay="300">
+          Complementing my IT expertise is my extensive field experience in high-security operations, including surveillance monitoring and gaming security operations at Sun Meropa Casino. This background has instilled in me exceptional attention to detail, strict compliance with operational frameworks, and the ability to perform under high-pressure enterprise environments.
+        </p>
+
+        <p class="scroll-anim" data-anim="middle-in" data-delay="350">
+          I am eager to contribute my technical capabilities and operational discipline to your organization. Thank you for considering my application, and I look forward to the opportunity to discuss how my skill set aligns with your team's goals.
+        </p>
+
+        <!-- Signature Block -->
+        <div class="pt-4 border-t border-cyan-500/20 dark:border-slate-800/80 scroll-anim" data-anim="fade-up" data-delay="400">
+          <p class="text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider font-medium">Sincerely,</p>
+          <p class="text-lg font-bold text-slate-900 dark:text-white tracking-wide mt-1">
+            Sekoala Daniel Bopape
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Professional Experience -->
+<section class="profile-section relative w-full overflow-hidden my-12" id="experience">
+  <div class="relative w-full bg-fixed bg-cover bg-center bg-no-repeat transition-all duration-700 flex flex-col items-center justify-center p-4 md:p-12 scroll-anim" data-anim="fade-down" id="parallax-experience-bg" style="background-image: linear-gradient(to right, rgba(248, 250, 252, 0.92), rgba(241, 245, 249, 0.88)), url('https://picsum.photos/1920/1080?technology');">
+
+    <!-- Experience Main Container Card -->
+    <div class="experience-card relative z-10 w-full max-w-5xl mx-auto backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-10 shadow-2xl transition-colors duration-300 space-y-8 scroll-anim" data-anim="middle-out" data-delay="100">
+      
+      <!-- Section Header -->
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-5 flex flex-wrap items-center justify-between gap-4 scroll-anim" data-anim="fade-right" data-delay="150">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 text-2xl shadow-sm scroll-anim" data-anim="middle-in" data-delay="200">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              Professional Experience
+            </h2>
+            <p class="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400">
+              Security Operations & Technical Track Record
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Wrapper -->
+      <div class="space-y-6 relative before:absolute before:inset-0 before:left-3 md:before:left-5 before:w-0.5 before:bg-gradient-to-b before:from-cyan-500 before:via-blue-500 before:to-transparent">
+        
+        <!-- Experience Item 1 -->
+        <div class="experience-item relative pl-8 md:pl-12 group scroll-anim" data-anim="fade-left" data-delay="200">
+          <div class="absolute left-1.5 md:left-3.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-500 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform duration-300 shadow-md scroll-anim" data-anim="middle-out" data-delay="250"></div>
+          
+          <div class="bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-5 md:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-cyan-500/40">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">
+                Security Gaming Officer
+              </h3>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 w-fit scroll-anim" data-anim="fade-down" data-delay="300">
+                <i class="fa-solid fa-calendar-day text-xs"></i> 22 July 2021 – Present
+              </span>
+            </div>
+
+            <div class="text-sm font-semibold text-cyan-600 dark:text-cyan-400 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-building-shield"></i> Bidvest Protea Coin / Sun Meropa Casino
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="fade-up" data-delay="300">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Gaming & Casino Operations Security:</strong> Enforcing strict gaming compliance protocols, asset protection, and operational safety within Sun Meropa Casino.</span>
+              </li>
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="fade-right" data-delay="350">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Surveillance & Incident Monitoring:</strong> Active observation and reporting of security incidents, maintaining access management protocols across critical areas.</span>
+              </li>
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="middle-in" data-delay="400">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Compliance & Risk Mitigation:</strong> Assisting operational teams with regulatory risk audits and executive report submissions.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="experience-item relative pl-8 md:pl-12 group scroll-anim" data-anim="fade-right" data-delay="250">
+          <div class="absolute left-1.5 md:left-3.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform duration-300 shadow-md scroll-anim" data-anim="middle-out" data-delay="300"></div>
+          
+          <div class="bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-5 md:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-cyan-500/40">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">
+                Security Specialist
+              </h3>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 w-fit scroll-anim" data-anim="fade-down" data-delay="350">
+                <i class="fa-solid fa-calendar-day text-xs"></i> 30 May 2014 – 30 April 2017
+              </span>
+            </div>
+
+            <div class="text-sm font-semibold text-cyan-600 dark:text-cyan-400 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved"></i> Bidvest Protea Coin
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="fade-up" data-delay="350">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Access Control & Perimeter Protection:</strong> Managed facility access controls, performed site safety surveys, and maintained incident response logs.</span>
+              </li>
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="middle-out" data-delay="400">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Team Coordination:</strong> Supported emergency response protocols and daily security operational alignment.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="experience-item relative pl-8 md:pl-12 group scroll-anim" data-anim="fade-up" data-delay="300">
+          <div class="absolute left-1.5 md:left-3.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform duration-300 shadow-md scroll-anim" data-anim="middle-out" data-delay="350"></div>
+          
+          <div class="bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-5 md:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-cyan-500/40">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+              <h3 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white">
+                Security Specialist
+              </h3>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 w-fit scroll-anim" data-anim="fade-down" data-delay="400">
+                <i class="fa-solid fa-calendar-day text-xs"></i> 09 March 2006 – 2012
+              </span>
+            </div>
+
+            <div class="text-sm font-semibold text-cyan-600 dark:text-cyan-400 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-user-shield"></i> Bidvest Protea Coin
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2.5 scroll-anim" data-anim="middle-in" data-delay="400">
+                <i class="fa-solid fa-chevron-right text-xs text-cyan-500 mt-1 shrink-0"></i>
+                <span><strong class="text-slate-800 dark:text-slate-100">Operational Physical Security:</strong> Conducted routine floor patrols, entry verification, and physical infrastructure protection.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Core Competencies & Technical Skills -->
+<section class="profile-section relative w-full overflow-hidden my-12" id="competencies">
+  <div class="relative w-full bg-fixed bg-cover bg-center bg-no-repeat transition-all duration-700 flex flex-col items-center justify-center p-4 md:p-12 scroll-anim" data-anim="fade-down" id="parallax-skills-bg" style="background-image: linear-gradient(to right, rgba(248, 250, 252, 0.93), rgba(241, 245, 249, 0.88)), url('https://picsum.photos/1920/1080?technology');">
+
+    <!-- Skills Main Container Card -->
+    <div class="skills-card relative z-10 w-full max-w-6xl mx-auto backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-10 shadow-2xl transition-colors duration-300 space-y-8 scroll-anim" data-anim="middle-out" data-delay="100">
+      
+      <!-- Section Header -->
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-5 flex flex-wrap items-center justify-between gap-4 scroll-anim" data-anim="fade-right" data-delay="150">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 text-2xl shadow-sm scroll-anim" data-anim="middle-in" data-delay="200">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              Core Competencies & Technical Skills
+            </h2>
+            <p class="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400">
+              Technical Expertise, Infrastructure Administration & Operations
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills 3-Column Grid Layout -->
+      <div class="skills-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Skill Card 1: Networking & Systems -->
+        <div class="skill-card bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-cyan-500/50 hover:-translate-y-1 group flex flex-col justify-between space-y-4 scroll-anim" data-anim="fade-right" data-delay="200">
+          <div>
+            <div class="flex items-center gap-3 mb-4 border-b border-slate-200/60 dark:border-slate-700/60 pb-3">
+              <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 scroll-anim" data-anim="middle-out" data-delay="250">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Networking & Systems
+              </h3>
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-up" data-delay="300">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Cisco Routing & Switching</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-left" data-delay="350">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>TCP/IP Subnetting & Protocols</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="middle-in" data-delay="400">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Server Administration (CompTIA Server+)</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-right" data-delay="450">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Network Security & Firewalls</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-up" data-delay="500">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Hardware & Systems Troubleshooting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skill Card 2: Web & Software Development -->
+        <div class="skill-card bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-cyan-500/50 hover:-translate-y-1 group flex flex-col justify-between space-y-4 scroll-anim" data-anim="middle-out" data-delay="250">
+          <div>
+            <div class="flex items-center gap-3 mb-4 border-b border-slate-200/60 dark:border-slate-700/60 pb-3">
+              <div class="w-9 h-9 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg group-hover:bg-cyan-500 group-hover:text-white transition-colors duration-300 scroll-anim" data-anim="middle-in" data-delay="300">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Web & Software Dev
+              </h3>
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-down" data-delay="300">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>HTML5, CSS3 & Custom Layouts</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-right" data-delay="350">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Responsive Web Design & Tailwind CSS</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="middle-out" data-delay="400">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Blogger XML Customization</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-up" data-delay="450">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Basic Algorithmic & Scripting Logic</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skill Card 3: Operations & Soft Skills -->
+        <div class="skill-card bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-cyan-500/50 hover:-translate-y-1 group flex flex-col justify-between space-y-4 md:col-span-2 lg:col-span-1 scroll-anim" data-anim="fade-left" data-delay="300">
+          <div>
+            <div class="flex items-center gap-3 mb-4 border-b border-slate-200/60 dark:border-slate-700/60 pb-3">
+              <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300 scroll-anim" data-anim="middle-out" data-delay="350">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Operations & Soft Skills
+              </h3>
+            </div>
+
+            <ul class="space-y-2.5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-up" data-delay="350">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Surveillance & Control Room Operations</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-right" data-delay="400">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>High-Pressure Problem Solving</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="middle-in" data-delay="450">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Compliance & Detail Orientation</span>
+              </li>
+              <li class="flex items-center gap-2.5 scroll-anim" data-anim="fade-left" data-delay="500">
+                <i class="fa-solid fa-check text-cyan-500 text-xs shrink-0"></i>
+                <span>Clear Technical Communication</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Testimonials -->
+<section class="profile-section relative w-full overflow-hidden my-12" id="testimonials-section-wrapper">
+  <div class="relative w-full bg-cyan-50 dark:bg-slate-950 transition-all duration-700 flex flex-col items-center justify-center p-4 md:p-12 scroll-anim" data-anim="fade-down" id="parallax-testimonials-bg">
+
+    <!-- Main Container Card -->
+    <div class="testimonials-card relative z-10 w-full max-w-5xl mx-auto backdrop-blur-md bg-white/85 dark:bg-slate-900/80 border border-cyan-500/30 dark:border-slate-800 rounded-2xl p-6 md:p-10 shadow-2xl transition-colors duration-300 space-y-8 scroll-anim" data-anim="middle-out" data-delay="100">
+      
+      <!-- Section Header with Rating Badge -->
+      <div class="border-b border-cyan-500/20 dark:border-slate-800 pb-6 flex flex-wrap items-center justify-between gap-4 scroll-anim" data-anim="fade-right" data-delay="150">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 text-2xl shadow-sm scroll-anim" data-anim="middle-in" data-delay="200">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                Client Testimonials
+              </h2>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 shadow-sm scroll-anim" data-anim="fade-left" data-delay="250">
+                <i class="fa-solid fa-star text-amber-500"></i> 5.0 Rating
+              </span>
+            </div>
+            <p class="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 scroll-anim" data-anim="fade-up" data-delay="300">
+              Hear from satisfied clients about the quality and reliability of my IT support & engineering services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BlooTrue External Widget Container -->
+      <div class="testimonials-widget-container bg-white/50 dark:bg-slate-800/50 border border-cyan-500/20 dark:border-slate-700/60 rounded-xl p-4 md:p-6 shadow-sm transition-all duration-300 min-h-[180px] flex flex-col justify-center scroll-anim" data-anim="middle-out" data-delay="350">
+        <div class="blootrue-widget-4NP-tjo1tWiA w-full">
+          <noscript>
+            <a class="text-cyan-600 dark:text-cyan-400 font-medium hover:underline" href="https://www.blootrue.com/widgets/google?utm_source=widget&amp;utm_medium=embed&amp;utm_campaign=powered_by" rel="noopener" target="_blank">
+              Free Google reviews widget by BlooTrue
+            </a>
+          </noscript>
+        </div>
+        <script async="async" src="https://api.blootrue.com/api/widgets/platform.js"></script>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: FAQs -->
+<section class="profile-section relative w-full overflow-hidden my-12" id="faqs">
+  <div class="relative w-full bg-fixed bg-cover bg-center bg-no-repeat transition-all duration-700 flex flex-col items-center justify-center p-4 md:p-12 bg-cyan-50 dark:bg-slate-950 scroll-anim" data-anim="fade-down" id="parallax-faqs-bg">
+
+    <!-- Main Container Card -->
+    <div class="faqs-card relative z-10 w-full max-w-5xl mx-auto backdrop-blur-md bg-white/85 dark:bg-slate-900/80 border border-cyan-500/30 dark:border-slate-800 rounded-2xl p-6 md:p-10 shadow-2xl transition-colors duration-300 space-y-8 scroll-anim" data-anim="middle-out" data-delay="100">
+      
+      <!-- Section Header with Badge -->
+      <div class="border-b border-cyan-500/20 dark:border-slate-800 pb-6 flex flex-wrap items-center justify-between gap-4 scroll-anim" data-anim="fade-right" data-delay="150">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 text-2xl shadow-sm scroll-anim" data-anim="middle-in" data-delay="200">
+            <i class="fa-solid fa-circle-question"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                Frequently Asked Questions
+              </h2>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 shadow-sm scroll-anim" data-anim="fade-left" data-delay="250">
+                <i class="fa-solid fa-info-circle text-cyan-500"></i> Help Center
+              </span>
+            </div>
+            <p class="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 scroll-anim" data-anim="fade-up" data-delay="300">
+              Find answers to common questions regarding qualifications, technical expertise, work experience, and availability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container where dynamic items/accordion content renders -->
+      <div class="faqs-content-wrapper space-y-4 text-slate-700 dark:text-slate-200 scroll-anim" data-anim="middle-out" data-delay="350" id="faq-dynamic-content">
+        <!-- Accordion items content placeholder -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Direct Job Application & Recruiter Inquiry -->
+<section class="profile-section max-w-4xl mx-auto my-10 px-4" id="job-opportunity">
+  <div class="relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 bg-fixed bg-cover bg-center border border-slate-200 dark:border-slate-800 p-6 md:p-10 scroll-anim" data-anim="fade-down" id="parallax-card" style="background-image: url('https://picsum.photos/1200/800');">
+    
+    <!-- Gradient Overlay for Light/Dark Adaptation -->
+    <div class="absolute inset-0 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md transition-colors duration-300 pointer-events-none"></div>
+
+    <div class="relative z-10 space-y-6 text-slate-800 dark:text-slate-100">
+      
+      <!-- Section Header -->
+      <div class="flex items-center justify-between border-b border-slate-300 dark:border-slate-700 pb-4 scroll-anim" data-anim="fade-right" data-delay="150">
+        <h2 class="text-2xl md:text-3xl font-extrabold flex items-center gap-3 text-slate-900 dark:text-white">
+          <i class="fa-solid fa-paper-plane text-indigo-600 dark:text-indigo-400 scroll-anim" data-anim="middle-in" data-delay="200"></i>
+          <span>Direct Job Application & Recruiter Inquiry</span>
+        </h2>
+        
+        <!-- Refresh Background Image Button -->
+        <button class="flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-lg bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all shadow-sm cursor-pointer scroll-anim" data-anim="fade-left" data-delay="250" onclick="refreshParallaxBg()" title="Change Background" type="button">
+          <i class="fa-solid fa-rotate-right"></i> New BG
+        </button>
+      </div>
+
+      <!-- Recruiter Welcome Banner -->
+      <div class="recruiter-welcome-banner flex items-start gap-4 p-4 rounded-xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-900/60 text-indigo-900 dark:text-indigo-200 scroll-anim" data-anim="middle-out" data-delay="200">
+        <i class="fa-solid fa-handshake-angle text-2xl text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5 scroll-anim" data-anim="middle-in" data-delay="250"></i>
+        <p class="text-sm md:text-base leading-relaxed">
+          <strong class="font-bold text-indigo-950 dark:text-indigo-100">Welcome Hiring Managers & Recruiters!</strong> Thank you for reviewing my candidate profile. I am actively seeking full-time, contract, or hybrid IT support and networking roles. Please submit job details or interview scheduling requests directly below.
+        </p>
+      </div>
+
+      <!-- Application Form Container -->
+      <div class="application-box bg-white/70 dark:bg-slate-900/70 p-6 rounded-xl border border-slate-200/60 dark:border-slate-800/60 shadow-lg backdrop-blur-sm scroll-anim" data-anim="fade-up" data-delay="250">
+        <form autocomplete="on" class="space-y-4" id="contact-form">
+          
+          <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-right" data-delay="300">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="company">Company / Organization Name</label>
+            <input autocomplete="organization" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="company" name="subject" placeholder="e.g., Enterprise IT Solutions" required="required" type="text"/>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-right" data-delay="350">
+              <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="first-name">First Name</label>
+              <input autocomplete="given-name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="first-name" name="name" placeholder="e.g., John" required="required" type="text"/>
+            </div>
+            <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-left" data-delay="400">
+              <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="surname">Surname</label>
+              <input autocomplete="family-name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="surname" name="surname" placeholder="e.g., Smith" required="required" type="text"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-right" data-delay="400">
+              <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="recruiter-email">Contact Email</label>
+              <input autocomplete="email" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="recruiter-email" name="email" placeholder="e.g., recruiter@company.com" required="required" type="email"/>
+            </div>
+            <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-left" data-delay="450">
+              <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="recruiter-phone">Contact Phone Number</label>
+              <input autocomplete="tel" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="recruiter-phone" name="phone" pattern="[0-9+\s\-()]{7,15}" placeholder="e.g., 071 140-5870" type="tel"/>
+            </div>
+          </div>
+
+          <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-down" data-delay="450">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="position">Role / Opportunity Title</label>
+            <input class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="position" name="role" placeholder="e.g., Desktop Support Specialist / Network Admin" required="required" type="text"/>
+          </div>
+
+          <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="middle-in" data-delay="500">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="location">Job Location / Work Mode</label>
+            <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="location" name="work_mode">
+              <option value="Polokwane / Limpopo Region">Polokwane / Limpopo Region</option>
+              <option value="Gauteng Region">Gauteng Region</option>
+              <option value="Remote / Hybrid">Remote / Hybrid</option>
+              <option value="Nationwide (Relocation Offered)">Nationwide (Relocation Offered)</option>
+            </select>
+          </div>
+
+          <div class="form-group flex flex-col gap-1.5 scroll-anim" data-anim="fade-up" data-delay="500">
+            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="details">Opportunity Details / Message</label>
+            <textarea class="w-full px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" id="details" name="message" placeholder="Briefly describe the job opportunity, requirements, or interview details..." rows="4"></textarea>
+          </div>
+
+          <button class="btn-submit w-full mt-2 py-3 px-6 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-indigo-500/20 transition-all cursor-pointer scroll-anim" data-anim="middle-out" data-delay="550" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Job Opportunity Details
+          </button>
+
+          <div class="mt-3 text-center text-sm font-medium" id="form-message"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+            
+<!-- SECTION: Footer with Copilot & Code Branding -->
+<footer class="site-footer max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-cyan-500/30 dark:border-gray-800 text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300 scroll-anim" data-anim="fade-down" id="site-footer-section">
+  
+  <!-- Copyright Line -->
+  <p class="font-medium text-gray-700 dark:text-gray-300 text-center sm:text-left scroll-anim" data-anim="fade-right" data-delay="150">
+    © 2026 Sekoala Daniel Bopape. All Rights Reserved.
+  </p>
+  
+  <!-- Branding Container -->
+  <div class="footer-brand-container flex items-center gap-2.5 bg-cyan-50/80 dark:bg-gray-900/80 border border-cyan-500/40 dark:border-gray-800 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm scroll-anim" data-anim="middle-out" data-delay="200">
+    <span class="text-xs font-semibold tracking-wider uppercase text-gray-500 dark:text-gray-400 scroll-anim" data-anim="fade-down" data-delay="250">Powered by</span>
+    
+    <img alt="Copilot Logo" class="footer-copilot-img h-5 w-auto object-contain transition-transform hover:scale-105 scroll-anim" data-anim="middle-in" data-delay="300" src="https://res.cloudinary.com/dulmfdigk/image/upload/v1765936308/copilot_image_1765908460899_xiwnqc.png"/>
+    
+    <span class="text-cyan-500/50 dark:text-gray-700 font-light">|</span>
+    
+    <i class="fa-solid fa-code footer-code-icon text-cyan-500 dark:text-gray-300 text-sm scroll-anim" data-anim="fade-up" data-delay="350"></i>
+    
+    <a class="font-bold text-cyan-500 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors scroll-anim" data-anim="fade-left" data-delay="400" href="https://www.it-u.co.za" rel="noopener" target="_blank">
+      iT-U
+    </a>
+  </div>
+
+</footer>
+  
+
+
+
+
+      
     </main>
 
-    <footer>
-        <p>&copy; 2026 Sekoala. All rights reserved.</p>
-    </footer>
-
+   
     <script src="js/main.js"></script>
 </body>
 </html>
