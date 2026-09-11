@@ -378,6 +378,7 @@
   
 
 <main>
+
 <!-- About Section -->
 <section class="relative bg-white text-slate-900 bg-fixed bg-cover bg-center transition-colors duration-300 py-20 dark:bg-slate-900 dark:text-slate-100" id="about-section">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
@@ -425,8 +426,8 @@
         </div>
       </div>
       
-      <!-- Core Values Accordion (Single-Active State) -->
-      <div class="space-y-6 scroll-anim" data-anim="fade-up" data-delay="200" x-data="{ active: 0 }">
+      <!-- Core Values Accordion (Initial state: all closed, exclusive open) -->
+      <div class="space-y-6 scroll-anim" data-anim="fade-up" data-delay="200" x-data="{ active: null }">
         <h3 class="text-2xl sm:text-3xl font-bold text-center lg:text-left text-slate-800 dark:text-slate-100">
           Core Values
         </h3>
@@ -436,7 +437,7 @@
           <!-- Value 1: Integrity & Professionalism -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
-              @click="active = (active === 0 ? null : 0)" 
+              @click="active = active === 0 ? null : 0" 
               class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
               <span class="flex items-center gap-3 text-base sm:text-lg">
@@ -453,7 +454,7 @@
           <!-- Value 2: Client-Centric Service -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
-              @click="active = (active === 1 ? null : 1)" 
+              @click="active = active === 1 ? null : 1" 
               class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
               <span class="flex items-center gap-3 text-base sm:text-lg">
@@ -470,7 +471,7 @@
           <!-- Value 3: Continuous Learning -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
-              @click="active = (active === 2 ? null : 2)" 
+              @click="active = active === 2 ? null : 2" 
               class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
               <span class="flex items-center gap-3 text-base sm:text-lg">
@@ -487,7 +488,7 @@
           <!-- Value 4: Security First -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
-              @click="active = (active === 3 ? null : 3)" 
+              @click="active = active === 3 ? null : 3" 
               class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
               <span class="flex items-center gap-3 text-base sm:text-lg">
@@ -504,7 +505,7 @@
           <!-- Value 5: Local Reliability -->
           <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800 shadow-sm transition-all duration-200">
             <button 
-              @click="active = (active === 4 ? null : 4)" 
+              @click="active = active === 4 ? null : 4" 
               class="w-full flex items-center justify-between p-4 text-left font-semibold text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none"
             >
               <span class="flex items-center gap-3 text-base sm:text-lg">
@@ -524,8 +525,6 @@
     </div>
   </div>
 </section>
-    
-
  
     
   <!-- Services Section -->
